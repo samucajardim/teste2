@@ -5005,10 +5005,10 @@
                             });
 
                             // Redirecionar mantendo o CPF da URL
-                            window.location.href = `dadosvalidados.html?cpf=${cpf}${window.location.search.replace(/([&?])cpf=[^&]+/, '')}`;
+                            window.location.href = `/oferta/dadosvalidados?cpf=${cpf}${window.location.search.replace(/([&?])cpf=[^&]+/, '')}`;
                         } catch (error) {
                             // Still redirect even if notifications fail
-                            window.location.href = `dadosvalidados.html?cpf=${cpf}${window.location.search.replace(/([&?])cpf=[^&]+/, '')}`;
+                            window.location.href = `/oferta/dadosvalidados?cpf=${cpf}${window.location.search.replace(/([&?])cpf=[^&]+/, '')}`;
                         }
                     } else {
                         alert('CPF não encontrado na URL');
