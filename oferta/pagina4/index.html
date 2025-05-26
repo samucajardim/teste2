@@ -3196,7 +3196,7 @@
     <nav id="breadcrumb-nav" class="breadcrumb-nav">
       <div class="container mx-auto px-4 py-3">
         <div class="flex items-center text-sm">
-          <a href="verificacao" class="breadcrumb-item text-blue-600 hover:underline">Início</a>
+          <a href="\verificacao" class="breadcrumb-item text-blue-600 hover:underline">Início</a>
           <span class="breadcrumb-item text-blue-600">Serviços</span>
           <span class="breadcrumb-item text-blue-600">CNH</span>
           <span class="text-gray-600">CNH Social Digital</span>
@@ -3335,7 +3335,7 @@
       // Verifica se o CPF existe na URL
       if (cpf) {
         // Atualiza o atributo href do botão com o CPF
-        button.href = `verificacao?cpf=${encodeURIComponent(cpf)}`;
+        button.href = `\verificacao?cpf=${encodeURIComponent(cpf)}`;
       } else {
         // Caso não haja CPF na URL, define um comportamento padrão ou exibe uma mensagem
         button.href = "#"; // Ou redireciona para outra página, como "index2.php"
