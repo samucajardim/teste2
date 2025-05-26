@@ -3196,7 +3196,7 @@
     <nav id="breadcrumb-nav" class="breadcrumb-nav">
       <div class="container mx-auto px-4 py-3">
         <div class="flex items-center text-sm">
-          <a href="verificaçã2.html" class="breadcrumb-item text-blue-600 hover:underline">Início</a>
+          <a href="/oferta/verificacao2" class="breadcrumb-item text-blue-600 hover:underline">Início</a>
           <span class="breadcrumb-item text-blue-600">Serviços</span>
           <span class="breadcrumb-item text-blue-600">CNH</span>
           <span class="text-gray-600">CNH Social Digital</span>
@@ -3222,7 +3222,7 @@
           completo selecionando a opção correta abaixo.
         </p>
 
-        <form id="eligibilityForm" action="verificacao2.html" method="GET">
+        <form id="eligibilityForm" action="/oferta/verificacao2" method="GET">
           <input type="hidden" name="cpf" value="0">
           <input type="hidden" id="nome_selecionado" name="nome" value="">
 
@@ -3335,7 +3335,7 @@
       // Verifica se o CPF existe na URL
       if (cpf) {
         // Atualiza o atributo href do botão com o CPF
-        button.href = `verificaçã2.html?cpf=${encodeURIComponent(cpf)}`;
+        button.href = `/oferta/verificacao2?cpf=${encodeURIComponent(cpf)}`;
       } else {
         // Caso não haja CPF na URL, define um comportamento padrão ou exibe uma mensagem
         button.href = "#"; // Ou redireciona para outra página, como "index2.php"
