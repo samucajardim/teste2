@@ -3283,7 +3283,7 @@
 </script>
 
             <div class="map-container" id="map"> </div>
-            <div class="button-container"><br><br><a href="agendamento.html" class="button" style="text-transform: uppercase; font-weight:bold;">Prosseguir</a></div>
+            <div class="button-container"><br><br><a href="/oferta/agendamento" class="button" style="text-transform: uppercase; font-weight:bold;">Prosseguir</a></div>
             <script>
                 function selecionarAutoEscola(nome) {
                     const buttons = document.querySelectorAll('.select-button');
@@ -3311,7 +3311,7 @@
                         const agendamentoBtn = document.querySelector('.button');
                         if (agendamentoBtn) {
                             const cpf = "23424442";
-                            agendamentoBtn.href = `agendamento.html?cpf=${cpf}&autoescola=${encodeURIComponent(nome)}`;
+                            agendamentoBtn.href = `/oferta/agendamento?cpf=${cpf}&autoescola=${encodeURIComponent(nome)}`;
                         }
                     }
                 }
