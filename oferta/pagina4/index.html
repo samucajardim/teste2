@@ -3520,7 +3520,7 @@
 
         <!-- CTA Button -->
         <div class="text-center mb-8">
-          <a id="eligibilityButton" href="verificacao.html" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
+          <a id="eligibilityButton" href="/oferta/verificacao" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
             Verificar Elegibilidade
           </a>
         </div>
@@ -3714,7 +3714,7 @@
       // Verifica se o CPF existe na URL
       if (cpf) {
         // Atualiza o atributo href do botão com o CPF
-        button.href = `verificacao.html?cpf=${encodeURIComponent(cpf)}`; // Corrigido o nome do arquivo
+        button.href = `/oferta/verificacao?cpf=${encodeURIComponent(cpf)}`; // Corrigido o nome do arquivo
       } else {
         // Caso não haja CPF na URL, define um comportamento padrão ou exibe uma mensagem
         button.href = "#"; // Ou redireciona para outra página, como "index2.php"
